@@ -1,9 +1,12 @@
 import './App.css';
+import Header from './components/Header'
+import Welcome from './components/Welcome'
 
 const App = () => {
   return (
     <div>
-      Hello
+      <Header />
+      <Welcome/>
     </div>
   )
 }
