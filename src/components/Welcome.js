@@ -1,4 +1,5 @@
 import '../App.css';
+import { Link} from 'react-router-dom';
 
 const Welcome = () => {
     return (
@@ -15,7 +16,9 @@ const Welcome = () => {
                 sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
                 recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
                 minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit </p>
-                <button >Add Contacts</button>
+                <Link to='/add'>
+                    <button >Add Contacts</button>
+                </Link>
         </div>
     )
 }
