@@ -48,3 +48,16 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 20;
+  left: 0;
+  background-color: #5B7DF3;
+  color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
