@@ -66,3 +66,7 @@ input {
   display: flex;
   border-bottom: 1px solid #E0E0E0;
 }
+
+.card-inner {
+  padding-left: 10px;
+}

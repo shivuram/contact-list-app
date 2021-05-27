@@ -19,9 +19,7 @@ const App = () => {
                 <Header />
                 <Switch>
                     <Route path="/add" render={props => (
-                      <>
                         <AddContact addContactHandler={addContactHandler}  />
-                      </>
                     )}/>
                     <Route path="/" exact render={(props) => (
                       <>
