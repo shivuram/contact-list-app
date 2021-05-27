@@ -61,3 +61,8 @@ input {
   overflow-x: hidden;
   padding-top: 20px;
 }
+
+.card-container {
+  display: flex;
+  border-bottom: 1px solid #E0E0E0;
+}
