@@ -5,7 +5,7 @@ const Welcome = () => {
     return (
         <div className="welcome-container">
             <h2>Welcome to Our Contact List Application</h2>
-              <p class="welcome-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+              <p className="welcome-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
                 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
                 optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis

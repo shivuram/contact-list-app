@@ -3,7 +3,7 @@ const intialState = {
   contacts: [{
     id: 1,
     name: "Leanne Graham",
-    username: "Bret",
+    phone: "9790224613",
     email: "Sincere@april.biz",
   }],
 };

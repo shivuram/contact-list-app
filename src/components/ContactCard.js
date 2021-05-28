@@ -1,13 +1,13 @@
 import '../App.css';
 
 const ContactCard = (props) => {
-    const { title, email, phone } = props.contact;
+    const { name, email, phone } = props.contact;
     return (
         <div className="card-container">
             <div className="card-inner">
-                <p className="row">{title}</p>
-                {/* <p className="row" >{email}</p> */}
+                <p className="row">{name}</p>
                 <p className="row" >{phone}</p>
+                <p className="row" >{email}</p>
             </div>
         </div>
     )
