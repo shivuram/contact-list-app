@@ -1,11 +1,6 @@
 import { Types } from '../types'
 const intialState = {
-  contacts: [{
-    id: 1,
-    name: "Leanne Graham",
-    phone: "9790224613",
-    email: "Sincere@april.biz",
-  }],
+  contacts: [],
 };
 
 export const contactReducer = (state = intialState, action) => {

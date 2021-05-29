@@ -1,27 +1,36 @@
 import '../App.css';
 import React, { useState } from "react";
 import { useHistory } from 'react-router-dom';
+import { createContacts } from '../redux/actions/contactsActions'
+import { useDispatch } from 'react-redux'
+import { uuid } from 'uuidv4';
 
 const AddContact = (props) => {
     const [title, setTitle] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
 
+    const dispatch = useDispatch();
+
     const history = useHistory();
 
     const clickHandler = (e) => {
         e.preventDefault();
-        const contacts = {title, email, phone}
+        // const contacts = {title, email, phone}
         if (title === "" || email === "") {
             alert("ALl the fields are mandatory!");
             return;
         }
-        props.addContactHandler(contacts);
-        setEmail('');
-        setTitle('');
-        setPhone('');
+        const new_contact = {
+            id: uuid(),
+            name: title,
+            email: email,
+            phone: phone
+        }
+        dispatch(createContacts(new_contact));
         history.push('/');
     }
+    
     return (
         <div className="main-container">
             <div className="form-container">
